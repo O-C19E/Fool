@@ -25,3 +25,17 @@ As a result the crackers will have an extremely hard time to make sense of the c
 + restore.exe is the decrypted result
 + -K is for key and HE12-43NK-AIDD-N986 is used as the decryption key
 
+###################################################################################
+
+New Addition (restore.py)
+
+-- To run without decrypting
+
++ Just-in-Time restoration of the scrambled.exe
++ scrambled.exe can be directly through restore.py which acts as a launcher
+
+````python3 restore.py scrambled.exe````
+
+````Product Key: HE12-43NK-AIDD-N986````
+
++ The product key must be exactly the same
