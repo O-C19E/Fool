@@ -39,3 +39,22 @@ New Addition (restore.py)
 ````Product Key: HE12-43NK-AIDD-N986````
 
 + The product key must be exactly the same
+
+####################################################################################
+
+Updated Version: Introducing Server Client 
+
+- The server now stores the respective activation key
+- For the user to get the activation key they have to send the license key to the server through launcher.py
+- The user have to also select the scrambled.exe (Note: It can be any other executable such as .AppImage or .x86_64)
+- The server will collect the license key, hash of the scrambled.exe and the user device's fingerprint
+
+  The server currently runs on localhost<br/>
+  The server checks the user device's fingerprint and compare it if the fingerprint similarity is low then the user is not validated<br/>
+  The corresponding hash and keys to use is stored in licenses.db<br/>
+  To licenses can be created and checked using db_creation.py and db_check.py respectively<br/>
+
+To start simply run:
+
+First: ````python3 server.py````
+Second: ````python3 launcher.py````
